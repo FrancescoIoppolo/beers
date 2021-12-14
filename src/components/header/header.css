@@ -1,0 +1,34 @@
+.header {
+  background-color: rgb(226, 226, 226);
+  border-bottom: 1px solid rgb(196, 196, 196);
+  border-top: 1px solid rgb(196, 196, 196);
+  color: rgb(88, 88, 88);
+}
+
+.subHeader {
+  margin-left: 10%;
+  display: flex;
+  width: 80%;
+  padding: 5px;
+}
+
+.logo {
+  margin-right: auto;
+  order: 1;
+  color: black;
+  font-weight: bold;
+}
+
+.productMenu {
+  margin-left: auto;
+  order: 2;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-weight: bold;
+}
+
+.accountMenu {
+  order: 3;
+  padding-right: 30px;
+  font-weight: bold;
+}

@@ -1,0 +1,147 @@
+.body {
+  width: 80%;
+  margin-left: 10%;
+  padding: 5px;
+  margin-top: 40px;
+}
+
+.row {
+  display: flex;
+}
+
+.col-1 {
+  width: 250px;
+}
+
+.col-2 {
+  position: relative;
+  width: calc(100% - 250px);
+}
+
+.col-1 ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.col-1 div {
+  color: black;
+  font-weight: bold;
+  border-bottom: 1px solid gray;
+  padding: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.col-1 li {
+  color: rgb(88, 88, 88);
+  padding: 7px;
+  cursor: pointer;
+}
+
+.listProducts {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  gap: 10px;
+  padding-left: 10px;
+}
+
+.listProducts > div {
+  width: calc(33.3333% - 12px);
+}
+
+.selected {
+  cursor: pointer;
+  border-bottom: none !important;
+  display: flex;
+  width: 100%;
+  margin-top: 0 !important;
+  padding: 0px !important;
+}
+
+.selected > div {
+  border: 1px solid rgb(88, 88, 88);
+  border-radius: 20px;
+  width: 200px;
+}
+
+.selected .name {
+  margin-left: auto;
+  order: 1;
+  width: 80%;
+  display: inline-flex;
+}
+
+.selected .close {
+  width: 15%;
+  display: inline-flex;
+  text-align: right;
+  font-size: 15px;
+}
+
+.image img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.numerazione {
+  text-align: center;
+  font-size: 15px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.numeroDiPagina {
+  cursor: pointer;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.overlayProdotto {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+
+.imageProdotto {
+  text-align: center;
+}
+
+@media only screen and (max-width: 900px) {
+  .listProducts > div {
+    width: calc(50% - 12px);
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .listProducts > div {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .row {
+    display: contents;
+  }
+  .col-1 {
+    width: 100%;
+  }
+  .col-2 {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .listProducts > div {
+    width: 100%;
+  }
+}
